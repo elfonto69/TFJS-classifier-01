@@ -6,6 +6,7 @@
     <script src="https://unpkg.com/@tensorflow-models/knn-classifier"></script>
   </head>
   <body>
+    <div id="previous"></div>
     <div id="console"></div>
     <!-- Add an image that we will use to test -->
     <video autoplay playsinline muted id="webcam" width="224" height="224"></video>
@@ -13,7 +14,37 @@
     <button id="class-a">Add A</button>
     <button id="class-b">Add B</button>
     <button id="class-c">Add C</button>
-    <button id="class-e">Add E</button>
+    <button id="class-e">Set Empty</button>
+
+<hr>
+    <!-- div id="current_mode"></div>
+    <button id="class-e">Save Model / Go Live</button -->
+
+  <div class="region">
+    <h3>Save/Load Model</h3>
+
+    <div class="load-save-section">
+      <button id="load-local" disabled="true">Load model</button>
+      <button id="save-local" disabled="true">Save model</button>
+    </div>
+  </div>
+
+  <hr>
+  <h3>Counted Items</h3>
+  <table>
+    <tr>
+      <td>A:</td>
+      <td><div id="Acount"></div></td>
+    </tr>
+    <tr>
+      <td>B:</td>
+      <td><div id="Bcount"></div></td>
+    </tr>
+    <tr>
+      <td>C:</td>
+      <td><div id="Ccount"></div></td>
+    </tr>
+  </table>
 
     <!-- Load index.js after the content of the page -->
     <script src="index.js"></script>
